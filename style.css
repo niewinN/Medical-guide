@@ -1,0 +1,99 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 62.5%;
+}
+
+.header {
+	min-height: 8vh;
+	/* background-color: rgb(141, 206, 140);
+     */
+	background-color: #f6f5f2;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+
+.header_title {
+	margin-left: 5em;
+	font-size: 2.2rem;
+	color: #333;
+}
+
+.app {
+	min-height: 92vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(141, 206, 140);
+}
+
+.wrapper {
+	max-width: 1200px;
+}
+
+.app_box {
+	position: relative;
+	width: 400px;
+	min-height: 400px;
+	display: flex;
+	/* justify-content: center; */
+	background-color: #f6f5f2;
+	align-items: center;
+	flex-direction: column;
+	padding: 2em;
+	/* border: 1px solid red; */
+	border-radius: 10px;
+	box-shadow: 0 0 10px black;
+}
+
+.app_box--top {
+	border-bottom: 3px solid rgb(141, 206, 140);
+	margin-bottom: 5em;
+}
+
+.app_title {
+	font-size: 2.4rem;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.app_text {
+	position: absolute;
+	bottom: 0;
+	padding: 2em;
+	color: red;
+	font-size: 1.4rem;
+}
+
+.app_label {
+	font-size: 1.8rem;
+	margin-bottom: 1em;
+	font-weight: bold;
+}
+
+.app_options {
+	margin-bottom: 1em;
+	width: 100%;
+	text-align: center;
+	padding: 0.5em;
+	border-radius: 10px;
+	font-size: 1.8rem;
+}
+
+.button {
+	width: 100%;
+	padding: 0.5em 2em;
+	background-color: rgb(141, 206, 140);
+	border: none;
+	border-radius: 10px;
+	font-size: 1.8rem;
+	cursor: pointer;
+}
