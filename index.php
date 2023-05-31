@@ -55,23 +55,12 @@
 
                 </select>
                 <button class="button" id="show_tips" type="submit">Pokaż zalecenia</button>
-                <!-- <p class="app_text">*Pamiętaj, że są to ogólne wskazówki i zawsze powinno się kierować konkretnymi
-                    instrukcjami lekarza lub personelu medycznego, który zna najbardziej aktualne i dokładne informacje
-                    dotyczące przygotowania do konkretnego badania.</p> -->
+            
                 <div id="test_preparation"></div>
             </div>
         </div>
     </section>
-    <!-- <form action="medical_tests_guide.php" method="post">
-        <label for="medical_test">Wybierz badanie:</label>
-        <select id="medical_test" name="medical_test">
-            <option value="MRI">MRI</option>
-            <option value="USG">USG</option>
-            <option value="Kolposkopia">Kolposkopia</option>
-            < Dodaj więcej badań według potrzeb -->
-    <!-- </select>
-    <button type="submit">Pokaż wskazówki dotyczące przygotowania</button>
-    </form> -->
+
 </body>
 
 </html>
