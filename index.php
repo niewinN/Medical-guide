@@ -78,7 +78,7 @@ if (!isset($_POST['medical_test']) && !isset($_SESSION['medical_test'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Medical guide</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -150,7 +150,14 @@ if (!isset($_POST['medical_test']) && !isset($_SESSION['medical_test'])) {
                 <!-- <div id="test_preparation"></div> -->
             </div>
         </div>
+        <img src="img/heart-solid.svg" class="icon icon-heart" alt="">
+        <img src="img/star-of-life-solid.svg" class="icon icon-star" alt="">
+        <img src="img/stethoscope-solid.svg" class="icon icon-stethoscope" alt="">
+        <img src="img/vial-solid.svg" class="icon icon-vial" alt="">
     </section>
+    <footer class="footer">
+        <p class="footer_text">&copy Piotr Niewiński</p>
+    </footer>
 
 
 

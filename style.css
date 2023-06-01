@@ -11,8 +11,14 @@ html {
 	font-size: 62.5%;
 }
 
+body {
+	height: 100vh;
+	overflow: hidden;
+}
+
 .header {
-	min-height: 8vh;
+	padding: 2em;
+	/* min-height: 8vh; */
 	/* background-color: rgb(141, 206, 140);
      */
 	background-color: #f6f5f2;
@@ -28,19 +34,27 @@ html {
 }
 
 .app {
-	min-height: 92vh;
+	width: 100%;
+	min-height: 90vh;
+	/* height: calc(100vh - 4em); */
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: rgb(141, 206, 140);
+	position: relative;
+	/* z-index: -2; */
+	overflow: hidden;
 }
 
 .wrapper {
 	max-width: 1200px;
+	position: absolute;
+	z-index: 222;
 }
 
 .app_box {
-	position: relative;
+	/* position: relative; */
+	/* position: absolute; */
 	/* overflow: hidden; */
 	width: 400px;
 	min-height: 350px;
@@ -54,6 +68,8 @@ html {
 	/* border: 1px solid red; */
 	border-radius: 10px;
 	box-shadow: 0 0 10px black;
+	/* position: absolute; */
+	/* z-index: 222; */
 }
 
 .app_box--top {
@@ -101,6 +117,7 @@ html {
 	border-radius: 10px;
 	font-size: 1.8rem;
 	cursor: pointer;
+	/* z-index: 2; */
 }
 
 .medical_tips {
@@ -130,4 +147,132 @@ html {
 .medical_tips--title {
 	margin: 1.5em auto 0em;
 	font-size: 1.8rem;
+}
+
+.footer {
+	/* height: 3vh; */
+	text-align: center;
+	font-size: 1.2rem;
+	background-color: #f6f5f2;
+	padding: 1em;
+}
+
+.icon {
+	position: absolute;
+	width: 10%;
+	/* z-index: -1; */
+	opacity: 0.2;
+}
+
+.icon-heart {
+	top: 5%;
+	left: 5%;
+	animation: rotate 10s linear infinite, heartAnimation 10s linear infinite;
+}
+
+.icon-star {
+	top: 10%;
+	left: 95%;
+	animation: secondRotate 10s linear infinite, starAnimation 10s linear infinite;
+}
+
+.icon-stethoscope {
+	top: 90%;
+	left: 86%;
+	animation: rotate 10s linear infinite,
+		stethoscopeAnimation 10s linear infinite;
+}
+
+.icon-vial {
+	top: 80%;
+	left: 15%;
+	animation: secondRotate 10s linear infinite, vialAnimation 10s linear infinite;
+}
+
+@keyframes rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes secondRotate {
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+@keyframes heartAnimation {
+	25% {
+		top: 15%;
+		left: 80%;
+	}
+	50% {
+		top: 85%;
+		left: 45%;
+	}
+	75% {
+		top: 50%;
+		left: 10%;
+	}
+	100% {
+		top: 5%;
+		left: 5%;
+	}
+}
+
+@keyframes starAnimation {
+	25% {
+		top: 75%;
+		left: 70%;
+	}
+	50% {
+		top: 65%;
+		left: 25%;
+	}
+	75% {
+		top: 68%;
+		left: 55%;
+	}
+	100% {
+		top: 10%;
+		left: 95%;
+	}
+}
+
+@keyframes vialAnimation {
+	25% {
+		top: 35%;
+		left: 80%;
+	}
+	50% {
+		top: 15%;
+		left: 45%;
+	}
+	75% {
+		top: 88%;
+		left: 65%;
+	}
+	100% {
+		top: 80%;
+		left: 15%;
+	}
+}
+
+@keyframes stethoscopeAnimation {
+	25% {
+		top: 15%;
+		left: 50%;
+	}
+	50% {
+		top: 45%;
+		left: 5%;
+	}
+	75% {
+		top: 88%;
+		left: 3;
+	}
+	100% {
+		top: 90%;
+		left: 80%;
+	}
 }
