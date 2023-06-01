@@ -41,8 +41,10 @@ html {
 
 .app_box {
 	position: relative;
+	/* overflow: hidden; */
 	width: 400px;
-	min-height: 400px;
+	min-height: 350px;
+	/* max-height: 600px; */
 	display: flex;
 	/* justify-content: center; */
 	background-color: #f6f5f2;
@@ -77,6 +79,9 @@ html {
 	font-size: 1.8rem;
 	margin-bottom: 1em;
 	font-weight: bold;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
 }
 
 .app_options {
@@ -96,4 +101,33 @@ html {
 	border-radius: 10px;
 	font-size: 1.8rem;
 	cursor: pointer;
+}
+
+.medical_tips {
+	font-size: 1.4rem;
+	/* font-weight: bold; */
+	padding: 2em;
+	/* max-height: 0; */
+	/* background-color: #f6f5f2; */
+	/* overflow: hidden; */
+	transition: max-height 0.3s ease;
+	/* position: absolute; Dodaj pozycjonowanie absolutne do wskazówek */
+	/* bottom: 0; Ustaw wskazówki na dole kontenera */
+	/* left: 0; Ustaw wskazówki na lewo kontenera */
+	/* width: 100%; */
+	/* overflow: hidden; */
+}
+
+.medical_tips.show {
+	max-height: 500px; /* Ustaw tutaj odpowiednią wartość dla maksymalnej wysokości */
+	overflow-y: auto;
+}
+
+.medical_tips li {
+	margin-bottom: 1em;
+}
+
+.medical_tips--title {
+	margin: 1.5em auto 0em;
+	font-size: 1.8rem;
 }
