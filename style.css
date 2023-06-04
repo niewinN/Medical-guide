@@ -70,14 +70,6 @@ body {
 	margin-bottom: 1em;
 }
 
-.app_text {
-	position: absolute;
-	bottom: 0;
-	padding: 2em;
-	color: red;
-	font-size: 1.4rem;
-}
-
 .app_label {
 	font-size: 1.8rem;
 	margin-bottom: 1em;
