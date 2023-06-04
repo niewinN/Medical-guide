@@ -7,8 +7,6 @@ $response = '';
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['medical_test'])) {
     $medicalTest = $_POST['medical_test'];
 
-    // Tutaj można skonfigurować połączenie z ChatGPT API i uzyskać wskazówki dla badania medycznego
-
     // Symulowane odpowiedzi od ChatGPT
     $simulated_responses = [
         'Badanie krwi' => '<ul>
@@ -82,29 +80,6 @@ if (!isset($_POST['medical_test']) && !isset($_SESSION['medical_test'])) {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#show_tips').on('click', function() {
-                var medicalTest = $('#medical_test').val();
-                $.ajax({
-                    url: 'medical_tests_guide.php',
-                    type: 'post',
-                    data: { medical_test: medicalTest },
-                    success: function(response) {
-                        $('#test_preparation').html(response);
-                    }
-                });
-            });
-        });
-    </script> -->
-    <!-- <script>
-        $(document).ready(function() {
-            $('#show_tips').on('click', function() {
-                $('.medical_tips').classList.toggle('show');
-            });
-        });
-    </script> -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -146,8 +121,6 @@ if (!isset($_POST['medical_test']) && !isset($_SESSION['medical_test'])) {
                 <?php unset($_SESSION['medical_test']); // Usunięcie zapisanego badania po odswiezeniu 
                 ?>
 
-
-                <!-- <div id="test_preparation"></div> -->
             </div>
         </div>
         <img src="img/heart-solid.svg" class="icon icon-heart" alt="">
